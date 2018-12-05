@@ -19,8 +19,9 @@
       try {
         var map1 = new Map()
         map1.set('foo', 'Foo')
-        var map2 = new map1.constructor(map1.valueOf())
-        document.getElementById('test1').innerHTML = map2.get('foo')
+        var map2 = new map1.constructor(map1)
+        map1.add('bar', 'Bar')
+        document.getElementById('test1').innerHTML = map2.get('foo') + ', ' + map2.get('bar')
       } catch (ex) {
         document.getElementById('test1').innerHTML = '' + ex
       }
