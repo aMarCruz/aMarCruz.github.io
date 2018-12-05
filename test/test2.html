@@ -20,13 +20,20 @@
     <h2 id="test1"></h2>
 
     <script>
-      try {
-        var obj1 = new Uint8Array([3,4])
-        var obj2 = new obj1.constructor(obj1)
-        document.getElementById('test1').innerHTML = obj2[0] + ',' + obj2[1]
-      } catch (ex) {
-        document.getElementById('test1').innerHTML = '' + ex
+      function outTest (out) {
+        if (typeof Uint8Array === 'undefined') {
+          out.innerHTML = 'Uint8Array not supported.'
+          return
+        }
+        try {
+          var obj1 = new Uint8Array([3,4])
+          var obj2 = new Uint8Array(obj1)
+          out.innerHTML = obj2[0] + ',' + obj2[1]
+        } catch (ex) {
+          out.innerHTML = '' + ex
+        }
       }
+      outTest(document.getElementById('test1'))
     </script>
   </body>
 </html>
