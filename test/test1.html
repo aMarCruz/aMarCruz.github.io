@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="css-menubar" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Knotion Production Platform">
+    <meta name="author" content="aMarCruz">
+    <title>Test Map</title>
+    <style type="text/css">
+      body { font-family: sans-serif; padding-left: 12%; padding-top: 8% }
+    </style>
+  </head>
+  <body>
+    <h1>aMarCruz Site</h1>
+    <h2 id="test1"></h2>
+
+    <script>
+      try {
+        var map1 = new Map()
+        map.set('foo', 'Foo')
+        var map2 = new Map(map1)
+        document.getElementById('test1').innerHTML = map2.get('foo')
+      } catch (ex) {
+        document.getElementById('test1').innerHTML = '' + ex
+      }
+    </script>
+  </body>
+</html>
