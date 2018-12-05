@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="Knotion Production Platform">
     <meta name="author" content="aMarCruz">
-    <title>Test Map</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Map Test</title>
     <style type="text/css">
       body { font-family: sans-serif; padding-left: 12%; padding-top: 8% }
     </style>
   </head>
   <body>
-    <h1>aMarCruz Site</h1>
+    <h1>Map Test</h1>
     <h2 id="test1"></h2>
 
     <script>
@@ -20,7 +24,7 @@
         var map1 = new Map()
         map1.set('foo', 'Foo')
         var map2 = new map1.constructor(map1)
-        map1.add('bar', 'Bar')
+        map1.set('bar', 'Bar')
         document.getElementById('test1').innerHTML = map2.get('foo') + ', ' + map2.get('bar')
       } catch (ex) {
         document.getElementById('test1').innerHTML = '' + ex
