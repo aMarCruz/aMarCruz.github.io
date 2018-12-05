@@ -18,6 +18,7 @@
   <body>
     <h1>Map Test</h1>
     <h2 id="test1"></h2>
+    <h3 id="note1"></h2>
 
     <script>
       try {
@@ -26,6 +27,7 @@
         var map2 = new map1.constructor(map1)
         map1.set('bar', 'Bar')
         document.getElementById('test1').innerHTML = map2.get('foo') + ', ' + map2.get('bar')
+        document.getElementById('note1').innerHTML = 'Size: ' + map2.size
       } catch (ex) {
         document.getElementById('test1').innerHTML = '' + ex
       }
