@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="css-menubar" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Knotion Production Platform">
+    <meta name="author" content="aMarCruz">
+    <title>TypedArray Test</title>
+    <style type="text/css">
+      body { font-family: sans-serif; padding-left: 12%; padding-top: 8% }
+    </style>
+  </head>
+  <body>
+    <h1>TypedArray test</h1>
+    <h2 id="test1"></h2>
+
+    <script>
+      try {
+        var obj1 = new Uint8Array([3,4])
+        var obj2 = new src.constructor(obj1)
+        document.getElementById('test1').innerHTML = obj2[0] + ',' + obj2[2]
+      } catch (ex) {
+        document.getElementById('test1').innerHTML = '' + ex
+      }
+    </script>
+  </body>
+</html>
