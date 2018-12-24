@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="css-menubar" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Knotion Production Platform">
+    <meta name="author" content="aMarCruz">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>TypedArray Test</title>
+    <style type="text/css">
+      body { font-family: sans-serif; padding-left: 12%; padding-top: 8% }
+    </style>
+    <script src="test-regex.js"></script>
+  </head>
+  <body>
+    <h1>Regex [^] test</h1>
+    <h2 id="test1"></h2>
+    <script>
+      function outTest(out) {
+        var res = testRegex()
+        out.innerHTML = '[' + res.join(', ') + ']'
+      }
+      outTest(document.getElementById('test1'))
+    </script>
+  </body>
+</html>
