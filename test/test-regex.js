@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 function testRegex () {
-  var HTML_CMNT = /<!--(?:>|[^]*?--\s*>)/g
+  var HTML_CMNT = /<!--(?:>|[\s\S]*?--\s*>)/g
   var html = [
     '<!DOCTYPE html><!--[if lt IE 7]>',
     '  <html class="no-js lt-ie9 lt-ie8 lt-ie7">',
