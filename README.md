@@ -1,3 +1,0 @@
-# aMarCruz Site
-
-## WIP
