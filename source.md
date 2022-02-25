@@ -10,7 +10,7 @@
 
   I am Alberto Martínez (aMarCruz), a full-stack developer with more than 20 years of experience and I try to share most of my work for free and help others, but this requires a lot of time and effort, so If you like my work, please consider supporting me.
 
-  [![Support][kofi-img]][kofi-url] &nbsp; [![Donate][donate-img]][donate-url]
+  [![Support me on Ko-fi][kofi-img]][kofi-url] &nbsp; [![Donate with PayPal][donate-img]][donate-url]
 
   [donate-img]: https://amarcruz.github.io/images/paypal_button_blue.svg
   [donate-url]: https://www.paypal.com/donate/?hosted_button_id=3PYDAHFES2EF8

@@ -37,8 +37,16 @@
         padding-left: 1rem;
         padding-right: 1rem;
       }
-      hr {
-        border-color: #e0e2e4;
+      #links {
+        border-top: 1px solid #e0e2e4;
+        border-bottom: 1px solid #e0e2e4;
+        padding: 0.5rem 0;
+      }
+      #links > b {
+        display: inline-block;
+        padding-left: 4px;
+        padding-right: 4px;
+        color: #d0d2d4;
       }
     </style>
   </head>
@@ -63,21 +71,20 @@
           <a href="https://ko-fi.com/C0C7LF7I"
             ><img src="images/kofi_button_blue.svg" alt="Support"
           /></a>
-          &nbsp;
           <a
             href="https://www.paypal.com/donate/?hosted_button_id=3PYDAHFES2EF8"
             ><img src="images/paypal_button_blue.svg" alt="donate"
           /></a>
         </p>
-        <hr noshade />
-        <p>
-          <a href="https://github.com/aMarCruz">GitHub profile</a> &bull;
-          <a href="https://www.npmjs.com/~amarcruz">npm profile</a> &bull;
+        <p id="links">
+          <a href="https://github.com/aMarCruz">GitHub profile</a>
+          <b>&middot;</b>
+          <a href="https://www.npmjs.com/~amarcruz">npm profile</a>
+          <b>&middot;</b>
           <a href="https://stackoverflow.com/users/3174665/amarcruz"
             >Stack Overflow</a
           >
         </p>
-        <hr noshade />
       </div>
       <p>
         <a href="https://git.io/streak-stats"
