@@ -27,6 +27,6 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: America/Mexico_City
           filename: images/github-metrics.svg
-          plugin_followup: yes
-          plugin_followup_sections: repositories
           repositories_affiliations: owner, collaborator
+          extra_js: |
+            document.querySelector('h1')?.remove()
