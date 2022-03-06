@@ -41,6 +41,6 @@ jobs:
           plugin_stackoverflow_user: 3174665
           repositories_affiliations: owner, collaborator
           extras_css: |
-            h1{margin-bottom:8px} h2,h2.field{margin-bottom:6px}
+            h2,h2.field{margin-top:10px;margin-bottom:6px}
           extras_js: |
             document.querySelector('h1')?.remove()
